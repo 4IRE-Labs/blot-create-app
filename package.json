@@ -2,12 +2,26 @@
   "name": "@4ire-labs/blot-create-app",
   "version": "1.0.0-beta.0",
   "description": "Generate new Polkadot blank project with different type via blot.js",
+  "files": [
+    "common",
+    "templates",
+    "utils"
+  ],
   "main": "index.js",
   "repository": "git@github.com:4IRE-Labs/blot-create-app.js.git",
   "license": "UNLICENSED",
   "scripts": {
   },
   "dependencies": {
+    "chalk": "^4.0.0",
+    "cross-spawn": "^7.0.1",
+    "mixpanel": "^0.13.0",
+    "ncp": "^2.0.0",
+    "os": "^0.1.1",
+    "replace-in-files": "^3.0.0",
+    "shelljs": "^0.8.3",
+    "which": "^2.0.2",
+    "yargs": "^17.0.1"
   },
   "devDependencies": {
   }

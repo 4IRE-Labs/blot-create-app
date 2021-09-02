@@ -1,0 +1,10 @@
+{
+  "name": "vanilla",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "echo The app is starting! It will automatically open in your browser when ready && parcel src/index.html --open"
+
+  }
+}
