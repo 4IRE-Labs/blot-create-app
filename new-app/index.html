@@ -8,16 +8,29 @@
   <title>BlotJS example app</title>
   <link rel="stylesheet" href="global.css">
 </head>
-<body>
-  <main id="signed-out-flow" style="">
+<body onload="setValue(0)">
+  <main>
     <h1>Welcome to simpler example of BlotJS app!</h1>
     <p>
-      To make use of the DOT blockchain, you need to install wallet extension first.
+      To make use of the DOT blockchain, you need to install PolkaDOT extension first.
     </p>
+
+    <div class="counter_container">
+      <div>
+        <div class="counter_value">
+          <p>Count:  </p>
+          <p id="countValue">0</p>
+      </div>
+      </div>
+      <div class="counter_buttons">
+        <div class="counter_button" onclick="increment()"><a>Increment</a></div>
+        <div class="counter_button" onclick="decrement()"><a>Decrement</a></div>
+      </div>
+    </div>
   </main>
 
   
 
-  <script src="./index.js"></script>
+  <script type="module" src="./index.js"></script>
 </body>
 </html>

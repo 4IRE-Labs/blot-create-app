@@ -3,14 +3,14 @@
 }
 
 html {
-  --bg: #efefef;
+  --bg: #aaa;
   --fg: #1e1e1e;
   --gray: #555;
   --light-gray: #ccc;
   --shadow: #e6e6e6;
   --success: rgb(90, 206, 132);
   --primary: #FF585D;
-  --secondary: #0072CE;
+  --secondary: #d32f79;
 
   background-color: var(--bg);
   color: var(--fg);
@@ -41,7 +41,8 @@ h1 {
 
 a,
 .link {
-  color: var(--primary);
+  margin: 0 auto;
+  color: var(--gray);
   text-decoration: none;
 }
 a:hover,
@@ -164,6 +165,31 @@ aside footer *:first-child {
 aside footer *:last-child {
   color: var(--gray);
 }
+
+
+.counter_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter_value{
+  width: 120px;
+  display: flex;
+}
+.counter_buttons{
+  display: flex;
+  flex-direction: row;
+}
+.counter_button {
+  height: 40px;
+  width: 125px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color:var(--secondary);
+  display: flex;
+  align-items: center;
+}
 @keyframes notify {
   0% { transform: translateY(10em) }
   5% { transform: translateY(0) }
@@ -173,7 +199,7 @@ aside footer *:last-child {
 
 @media (prefers-color-scheme: dark) {
   html {
-    --bg: #1e1e1e;
+    --bg: #aaa;
     --fg: #efefef;
     --gray: #aaa;
     --shadow: #2a2a2a;
