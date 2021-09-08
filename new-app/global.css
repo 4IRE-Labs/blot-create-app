@@ -11,6 +11,8 @@ html {
   --success: rgb(90, 206, 132);
   --primary: #FF585D;
   --secondary: #d32f79;
+  --secondary-hover: #f0368a;
+
 
   background-color: var(--bg);
   color: var(--fg);
@@ -44,12 +46,14 @@ a,
   margin: 0 auto;
   color: var(--gray);
   text-decoration: none;
+  user-select: none;
+
 }
 a:hover,
 a:focus,
 .link:hover,
 .link:focus {
-  text-decoration: underline;
+  cursor: pointer;
 }
 a:active,
 .link:active {
@@ -174,7 +178,6 @@ aside footer *:last-child {
 }
 
 .counter_value{
-  width: 120px;
   display: flex;
 }
 .counter_buttons{
@@ -189,6 +192,9 @@ aside footer *:last-child {
   background-color:var(--secondary);
   display: flex;
   align-items: center;
+}
+.counter_button:hover{
+  background-color:var(--secondary-hover);
 }
 @keyframes notify {
   0% { transform: translateY(10em) }

@@ -44,12 +44,13 @@ a,
   margin: 0 auto;
   color: var(--gray);
   text-decoration: none;
+  user-select: none;
 }
 a:hover,
 a:focus,
 .link:hover,
 .link:focus {
-  text-decoration: underline;
+  cursor: pointer;
 }
 a:active,
 .link:active {
@@ -174,7 +175,6 @@ aside footer *:last-child {
 }
 
 .counter_value{
-  width: 120px;
   display: flex;
 }
 .counter_buttons{
