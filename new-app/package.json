@@ -8,7 +8,7 @@
     "start": "echo The app is starting! It will automatically open in your browser when ready && parcel src/index.html --open"
   },
   "dependencies": {
-    "blot": "git://github.com/4IRE-Labs/blot.js#3c7044df2fd7bd0841dd5993ec92c682d072b1e1"
+    "blot": "git://github.com/4IRE-Labs/blot.js#237bd1addb166ff3e8a5702b7e4e297c33c0559c"
   },
   "devDependencies": {
     "vite": "^2.5.2"
