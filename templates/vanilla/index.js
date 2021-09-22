@@ -1,36 +1,35 @@
-import  {Blot, NetworkProvider, Account} from 'blot';
+import Blot from 'blot';
+import './global.css';
+
 const state = {
     blot: null,
-    provider: null,
     allAccounts: null,
     value: 0
 }
-// const initProvider = async () => {
-//     state.provider = await new NetworkProvider('ws://127.0.0.1:9944').connect();
-// }
-
-// const initBlot = async () => {
-//     const blot = new Blot(provider);
-//     state.blot = blot
+console.log(Blot)
+// window.initBlot = async () => {
+//     const blot = await Blot.create('ws://127.0.0.1:9944');
+//     state.blot = blot;
 //     try {
 //         await blot.enable('Example Vanilla App');
+//         await blot.setAccount(0);
 //       } catch (err) {
 //         console.warn("User didn't accept authorization or no extension installed.")
 //     }
-//     state.allAccounts = await blot.getAccounts();
+//     // state.allAccounts = await blot.getAccounts();
 // }
 
-window.setValue = (value) => {
+window.setCounterValue = (value) => {
     state.value = value;
     document.getElementById("countValue").innerHTML = value;
 }
-window.getValue = async () => {
+window.getCounterValue = async () => {
     console.log('getValue')
     const getValueFromContract = 0;
     window.setValue(0)
 }
 
-window.incriment = async () => {
+window.increment = async () => {
     console.log('incriment');
     window.setValue(state.value + 1)
 }

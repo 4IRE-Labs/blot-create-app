@@ -3,14 +3,16 @@
 }
 
 html {
-  --bg: #efefef;
+  --bg: #aaa;
   --fg: #1e1e1e;
   --gray: #555;
   --light-gray: #ccc;
   --shadow: #e6e6e6;
   --success: rgb(90, 206, 132);
   --primary: #FF585D;
-  --secondary: #0072CE;
+  --secondary: #d32f79;
+  --secondary-hover: #f0368a;
+
 
   background-color: var(--bg);
   color: var(--fg);
@@ -30,7 +32,7 @@ main {
 }
 
 h1 {
-  background-image: url(assets/logo-black.svg);
+  background-image: url(/assets/logo-polkadot.svg);
   background-position: center 1em;
   background-repeat: no-repeat;
   background-size: auto 1.5em;
@@ -41,14 +43,17 @@ h1 {
 
 a,
 .link {
-  color: var(--primary);
+  margin: 0 auto;
+  color: var(--fg);
   text-decoration: none;
+  user-select: none;
+
 }
 a:hover,
 a:focus,
 .link:hover,
 .link:focus {
-  text-decoration: underline;
+  cursor: pointer;
 }
 a:active,
 .link:active {
@@ -164,6 +169,33 @@ aside footer *:first-child {
 aside footer *:last-child {
   color: var(--gray);
 }
+
+
+.counter_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter_value{
+  display: flex;
+}
+.counter_buttons{
+  display: flex;
+  flex-direction: row;
+}
+.counter_button {
+  height: 40px;
+  width: 125px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color:var(--secondary);
+  display: flex;
+  align-items: center;
+}
+.counter_button:hover{
+  background-color:var(--secondary-hover);
+}
 @keyframes notify {
   0% { transform: translateY(10em) }
   5% { transform: translateY(0) }
@@ -173,14 +205,14 @@ aside footer *:last-child {
 
 @media (prefers-color-scheme: dark) {
   html {
-    --bg: #1e1e1e;
+    --bg: #aaa;
     --fg: #efefef;
     --gray: #aaa;
     --shadow: #2a2a2a;
     --light-gray: #444;
   }
   h1 {
-    background-image: url(assets/logo-white.svg);
+    background-image: url(assets/logo-polkadot.svg);
   }
   input:focus {
     box-shadow: 0 0 10em rgba(255, 255, 255, 0.02) inset;
