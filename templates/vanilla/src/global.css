@@ -11,6 +11,8 @@ html {
   --success: rgb(90, 206, 132);
   --primary: #FF585D;
   --secondary: #d32f79;
+  --secondary-hover: #f0368a;
+
 
   background-color: var(--bg);
   color: var(--fg);
@@ -30,7 +32,7 @@ main {
 }
 
 h1 {
-  background-image: url(assets/logo-polkadot.svg);
+  background-image: url(/assets/logo-polkadot.svg);
   background-position: center 1em;
   background-repeat: no-repeat;
   background-size: auto 1.5em;
@@ -42,9 +44,10 @@ h1 {
 a,
 .link {
   margin: 0 auto;
-  color: var(--gray);
+  color: var(--fg);
   text-decoration: none;
   user-select: none;
+
 }
 a:hover,
 a:focus,
@@ -168,7 +171,7 @@ aside footer *:last-child {
 }
 
 
-.counter_container {
+.counter_container, .deploy_container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,7 +184,7 @@ aside footer *:last-child {
   display: flex;
   flex-direction: row;
 }
-.counter_button {
+.counter_button, .deploy_button{
   height: 40px;
   width: 125px;
   margin: 10px;
@@ -189,6 +192,9 @@ aside footer *:last-child {
   background-color:var(--secondary);
   display: flex;
   align-items: center;
+}
+.counter_button:hover{
+  background-color:var(--secondary-hover);
 }
 @keyframes notify {
   0% { transform: translateY(10em) }

@@ -11,6 +11,7 @@
   "repository": "git@github.com:4IRE-Labs/blot-create-app.js.git",
   "license": "UNLICENSED",
   "scripts": {
+    "dev": "node index.js"
   },
   "dependencies": {
     "chalk": "^4.0.0",
